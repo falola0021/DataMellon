@@ -6,9 +6,8 @@ export default function TableContent() {
   return (
     <div>
       <div className={Styles.title}>Table</div>
-      <div className={Styles.table}>
-        <Table />
-      </div>
+
+      <Table />
     </div>
   );
 }

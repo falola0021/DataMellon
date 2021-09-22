@@ -1,10 +1,14 @@
+/* .container {
+  height: 100vh;
+  overflow: scroll;
+} */
 .title {
   font-size: 20px;
   font-weight: bold;
   color: rgb(85, 93, 116);
   margin-bottom: 40px;
 }
-.table {
-  height: 400px;
+/* .table {
+  height: 100vh;
   overflow-y: scroll;
-}
+} */

@@ -157,19 +157,21 @@ export default function Table() {
       },
     });
   return (
-    <div className={Styles.table}>
+    <>
       {loading ? (
         'loading...'
       ) : (
-        <MuiThemeProvider theme={getMuiTheme()}>
-          <MUIDataTable
-            title='Report'
-            data={data}
-            columns={columns}
-            options={options}
-          />
-        </MuiThemeProvider>
+        <div className={Styles.table}>
+          <MuiThemeProvider theme={getMuiTheme()}>
+            <MUIDataTable
+              title='Report'
+              data={data}
+              columns={columns}
+              options={options}
+            />
+          </MuiThemeProvider>
+        </div>
       )}
-    </div>
+    </>
   );
 }

@@ -5,7 +5,7 @@ import TableContent from '../table_content /TableContent';
 import Styles from './ContentContainer.module.css';
 export default function ContentContainer({ active }) {
   return (
-    <div>
+    <div className={Styles.container}>
       {active.dashboard && <DashboardContent />}
       {active.table && <TableContent />}
     </div>

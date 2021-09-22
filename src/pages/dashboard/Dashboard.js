@@ -11,19 +11,38 @@ export default function Dashboard() {
     dashboard: true,
     table: false,
   });
+
+  // Mobile responsive Drawer
+  const [drawer, setDrawer] = useState(false);
+  const [layout, setLayout] = useState(true);
+  const handleDrawer = () => {
+    setDrawer(!drawer);
+    setLayout(!layout);
+  };
   return (
     <div className={Styles.container}>
       <div className={Styles.leftsection}>
-        <Sidebar active={active} setActive={setActive} />
+        <Sidebar
+          handleDrawer={handleDrawer}
+          active={active}
+          setActive={setActive}
+        />
       </div>
+      {drawer && (
+        <div className={Styles.leftsectionmobile}>
+          <Sidebar
+            handleDrawer={handleDrawer}
+            active={active}
+            setActive={setActive}
+          />
+        </div>
+      )}
       <div className={Styles.rightsection}>
         <div className={Styles.nav}>
-          <Nav />
+          <Nav handleDrawer={handleDrawer} />
         </div>
-        <div className={Styles.sidebar}>
-          <div className={Styles.content}>
-            <ContentContainer active={active} />
-          </div>
+        <div onClick={() => setDrawer(false)} className={Styles.content}>
+          <ContentContainer active={active} />
         </div>
       </div>
     </div>

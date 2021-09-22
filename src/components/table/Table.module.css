@@ -1,3 +1,3 @@
-/* .table {
-  height: 300px !important;
-} */
+.table {
+  border: 1px solid rgb(230, 230, 230);
+}

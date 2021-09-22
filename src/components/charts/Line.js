@@ -1,7 +1,7 @@
 import React from 'react';
 // import Style from './Chart.module.css'
 
-import { Bar } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 
 function Dboard({ sales, errMessage, loading }) {
   // all my original Api Data is in sales state and i can get any value from it
@@ -23,7 +23,7 @@ function Dboard({ sales, errMessage, loading }) {
 
   return (
     <div>
-      <Bar
+      <Line
         data={data}
         options={{
           title: { display: true, fontSize: 20 },

@@ -4,7 +4,7 @@ import Chart from '../charts/Chart';
 
 export default function DashboardContent() {
   return (
-    <div>
+    <div className={Styles.container}>
       <div className={Styles.title}>Dashboard</div>
       <div className={Styles.chart}>
         <Chart />

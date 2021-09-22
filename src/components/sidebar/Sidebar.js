@@ -17,19 +17,21 @@ const sideItems = [
   },
 ];
 
-export default function Sidebar({ active, setActive }) {
+export default function Sidebar({ active, setActive, handleDrawer }) {
   // set active state on click
   const handleDashboard = () => {
     setActive({
       dashboard: true,
       table: false,
     });
+    handleDrawer();
   };
   const handleTable = () => {
     setActive({
       dashboard: false,
       table: true,
     });
+    handleDrawer();
   };
   return (
     <div>
