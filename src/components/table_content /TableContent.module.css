@@ -1,0 +1,11 @@
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(85, 93, 116);
+  margin-bottom: 40px;
+}
+.table {
+  height: 600px;
+  overflow-y: scroll;
+  border: 1px solid rgb(219, 219, 219);
+}

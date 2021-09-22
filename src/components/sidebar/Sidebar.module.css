@@ -1,0 +1,37 @@
+.logo{
+color: rgb(252,179,12);
+font-size: 20px;
+font-weight: bold;
+}
+.logo span{
+color: rgb(85,93,116);
+}
+
+.itemscontainer{
+margin-top: 30px;
+}
+.active{
+display: flex;
+font-size: 12px;
+cursor: pointer;
+border: 1px solid rgba(252,179,12,0.3);
+padding:8px 10px ;
+border-radius: 7px;
+color: rgb(252,179,12);
+margin-bottom: 10px;
+}
+
+.inactive{
+display: flex;
+font-size: 12px;
+cursor: pointer;
+border: 1px solid rgba(189, 189, 189, 0.3);
+padding:8px 10px ;
+border-radius: 7px;
+color: rgb(202, 202, 202);
+margin-bottom: 10px;
+}
+
+.name{
+margin-left: 10px;
+}

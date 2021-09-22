@@ -1,0 +1,14 @@
+
+.content{
+    display: flex;
+ color: rgb(85,93,116);
+ font-size: 12px;
+justify-content: right;
+align-items: center;
+
+
+}
+.icon{
+margin-left: 40px;
+cursor: pointer;
+}
